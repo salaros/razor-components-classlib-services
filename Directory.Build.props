@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <NETStandardVersion>netstandard2.0</NETStandardVersion>
+    <NETCoreVersion>netcoreapp3.0</NETCoreVersion>
+    <LangVersion>8.0</LangVersion>
+
+    <AspNetCoreVersion>3.0.0-preview-19075-0444</AspNetCoreVersion>
+    <BlazorVersion>0.8.0-preview-19104-04</BlazorVersion>
+  </PropertyGroup>
+</Project>

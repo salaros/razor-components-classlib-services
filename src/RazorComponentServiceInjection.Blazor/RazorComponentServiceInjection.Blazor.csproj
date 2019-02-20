@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>$(NETStandardVersion)</TargetFramework>
+    <LangVersion>$(LangVersion)</LangVersion>
+    <RunCommand>dotnet</RunCommand>
+    <RunArguments>blazor serve</RunArguments>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="$(BlazorVersion)" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.Build" Version="$(BlazorVersion)" PrivateAssets="all" />
+    <DotNetCliToolReference Include="Microsoft.AspNetCore.Blazor.Cli" Version="$(BlazorVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RazorComponentServiceInjection.App\RazorComponentServiceInjection.App.csproj" />
+  </ItemGroup>
+
+</Project>

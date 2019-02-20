@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>$(NETStandardVersion)</TargetFramework>
+    <LangVersion>$(LangVersion)</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Browser" Version="$(AspNetCoreVersion)" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Build" Version="$(AspNetCoreVersion)" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RazorComponentServiceInjection.Components.Shared\RazorComponentServiceInjection.Components.Shared.csproj" />
+    <ProjectReference Include="..\RazorComponentServiceInjection.Services\RazorComponentServiceInjection.Services.csproj" />
+  </ItemGroup>
+
+</Project>

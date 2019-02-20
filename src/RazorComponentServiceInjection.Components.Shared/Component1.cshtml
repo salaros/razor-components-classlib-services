@@ -1,0 +1,16 @@
+@using RazorComponentServiceInjection.Services
+@inject SomeService someService
+
+<div class="component-one">
+    <p>
+        This Blazor component is defined in the <strong>RazorComponentServiceInjection.Components.Shared</strong> package.
+    </p>
+    <button class="btn btn-primary" onclick="@TestService">Click me</button>
+</div>
+
+@functions {
+    private async void TestService()
+    {
+        await someService.PromptAsync("It's alive, type your text below");
+    }
+}
